@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Monserrat', sans-serif;
+    background-color: #34495e;
+    color: #fff;
+}
+
+.accordian{
+    width: 90%;
+    max-width: 1000px;
+    margin: 2 rem auto;
+}
+
+.accordian-item{
+    background-color: #fff;
+    color: #111;
+    margin: 1 rem 0;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+
+.accordian-item-header{
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.accordian-item-body{
+    max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+}
+
+.accordian-item-body-content{
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+.accordian-item-header.active + .accordian-item-body{
+max-height: 1000px;
+}
