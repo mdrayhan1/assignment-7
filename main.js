@@ -1,3 +1,4 @@
+// blog accordian 
 const accordionItemHeader = document.querySelectorAll(".accordian-item-header");
 accordionItemHeader.forEach(accordionItemHeader => {
     accordionItemHeader.addEventListener("click", event => {
