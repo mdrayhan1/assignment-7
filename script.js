@@ -37,7 +37,6 @@ const typeController = (e) => {
   if (!validLetters.includes(newLetter)) {
     return;
   }
-
   userText += newLetter;
 
   const newLetterCorrect = validate(newLetter);
